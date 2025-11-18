@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- JS -->
+    <script type="module" src="./assets/js/script.js"></script>
+</head>
+
+<body id="top">
+
+    <!-- ----- HEADER / HERO ------ -->
+    <header class="top-header">
+        <!-- sticky menu bar -->
+        <div class="menu-bar">
+            <div class="menu-left">
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <nav class="main-nav">
+                    <ul class="menu-list">
+                        <li><a href="#top">HOME</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-user"></i>ABOUT</a></li>
+                        <li><a href="#portfolio" id="menuPortfolio"><i class="fa-solid fa-table-cells"></i>PORTFOLIO</a>
+                        </li>
+                        <li><a href="#contact"><i class="fa-solid fa-envelope"></i>CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <button class="search-btn" aria-label="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <!-- mini thumbnails box displayed when clicking PORTFOLIO menu -->
+        <div class="portfolio-mini" id="miniThumbs">
+            <div class="mini-inner">
+                <img src="./assets/img/p1.jpg" alt="thumb 1" class="miniature" data-index="1" id="folio1">
+                <img src="./assets/img/p2.jpg" alt="thumb 2" class="miniature" data-index="2" id="folio2">
+                <img src="./assets/img/p3.jpg" alt="thumb 3" class="miniature" data-index="3" id="folio3">
+                <img src="./assets/img/p4.jpg" alt="thumb 4" class="miniature" data-index="4" id="folio4">
+                <img src="./assets/img/p5.jpg" alt="thumb 5" class="miniature" data-index="5" id="folio5">
+                <img src="./assets/img/p6.jpg" alt="thumb 6" class="miniature" data-index="6" id="folio6">
+                <img src="./assets/img/p7.jpg" alt="thumb 7" class="miniature" data-index="7" id="folio7">
+                <img src="./assets/img/p8.jpg" alt="thumb 8" class="miniature" data-index="8" id="folio8">
+            </div>
+        </div>
+
+        <!-- hero / parallax -->
+        <div class="hero parallax parallax-1">
+            <div class="hero-logo">
+                <span>MY WEBSITE LOGO</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- -------ABOUT -------- -->
+        <section class="section about" id="about">
+            <div class="section-heading">
+                <h2>ABOUT ME</h2>
+                <p class="section-sub">I love photography</p>
+            </div>
+
+            <p class="section-text">
+                Photography has always been a way for me to observe the world with curiosity and emotion.
+                I enjoy capturing scenes that reflect everyday life, natural beauty, and the stories hidden in simple
+                moments.
+                Through my work, I aim to create images that feel honest, calm, and connected to reality.
+            </p>
+
+            <section class="about-grid">
+                <div class="about-card">
+                    <p class="about-name"><i class="fa-solid fa-user"></i>My Name</p>
+                    <img src="./assets/img/avatar_hat.jpg" alt="avatar" class="about-avatar" />
+                </div>
+
+                <div class="about-description">
+                    <p>
+                        Welcome to my website. My name is Mohammad Husaini, a freelance photographer born in Kabul,
+                        Afghanistan. I began my journey in photography at the age of 15, starting with a simple mobile
+                        phone. My experience spans social documentary, nature, macro, and street photography.
+                        Additionally, I have professional experience in the cinema industry as an assistant director and
+                        have worked as a behind-the-scenes photographer for various short and feature films, as well as
+                        cinematic projects in Afghanistan.
+                    </p>
+                </div>
+            </section>
+
+            <p class="skills-title">I'm really good at:</p>
+
+            <div class="skills">
+                <div class="skill-row">
+                    <p><i class="fa-solid fa-camera"></i>Photography</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill fill-90">90%</div>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <p><i class="fa-solid fa-desktop"></i>Web Design</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill fill-85">85%</div>
+                    </div>
+                </div>
+
+                <div class="skill-row">
+                    <p><i class="fa-solid fa-image"></i>Photoshop</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill fill-75">75%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------ STATS STRIP ----- -->
+        <section class="stats-strip">
+            <div>
+                <h3>14+</h3>
+                <p>Partners</p>
+            </div>
+            <div>
+                <h3>55+</h3>
+                <p>Projects Done</p>
+            </div>
+            <div>
+                <h3>89+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div>
+                <h3>150+</h3>
+                <p>Meetings</p>
+            </div>
+        </section>
+
+        <!-- ----PORTFOLIO ------>
+        <section class="parallax parallax-2 portfolio-header" id="portfolio">
+            <h2>PORTFOLIO</h2>
+        </section>
+
+        <section class="section portfolio-content">
+            <div class="section-heading">
+                <h2>MY WORK</h2>
+                <p>Here are some of my latest work.</p>
+                <p>Click on the images to make them bigger</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <img src="./assets/img/p1.jpg" alt="portfolio 1" class="folio-img" data-index="1" />
+                <img src="./assets/img/p2.jpg" alt="portfolio 2" class="folio-img" data-index="2" />
+                <img src="./assets/img/p3.jpg" alt="portfolio 3" class="folio-img" data-index="3" />
+                <img src="./assets/img/p4.jpg" alt="portfolio 4" class="folio-img" data-index="4" />
+                <img src="./assets/img/p5.jpg" alt="portfolio 5" class="folio-img" data-index="5" />
+                <img src="./assets/img/p6.jpg" alt="portfolio 6" class="folio-img" data-index="6" />
+                <img src="./assets/img/p7.jpg" alt="portfolio 7" class="folio-img" data-index="7" />
+                <img src="./assets/img/p8.jpg" alt="portfolio 8" class="folio-img" data-index="8" />
+            </div>
+
+            <button class="btn load-more">LOAD MORE</button>
+        </section>
+
+        <!-- -----CONTACT -------->
+        <section class="parallax parallax-3 contact-header" id="contact">
+            <h2>CONTACT</h2>
+        </section>
+
+        <section class="section contact-content">
+            <div class="section-heading">
+                <h2>WHERE I WORK</h2>
+                <p class="section-sub">I'd love your feedback!</p>
+            </div>
+
+            <div class="contact-grid">
+                <img src="./assets/img/map.jpg" alt="map" class="contact-map" />
+
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-location-dot"></i>Rouen, fr</p>
+                    <p><i class="fa-solid fa-phone"></i>Phone: +33 0637895432</p>
+                    <p><i class="fa-solid fa-envelope"></i>Email: mohammadhu810@mail.com</p>
+                    <p class="coffee-line">
+                        Swing by for a cup of <i class="fa-solid fa-mug-hot"></i>, or leave me a note:
+                    </p>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Name" required />
+                    <input type="email" name="email" placeholder="Email" required />
+                </div>
+                <textarea name="message" rows="4" placeholder="Message" required></textarea>
+                <button type="submit" class="btn send-btn">
+                    <i class="fa-solid fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-------- FOOTER ------- -->
+    <footer class="page-footer">
+        <a href="#top" class="btn to-top">
+            <i class="fa-solid fa-arrow-up"></i> To the top
+        </a>
+
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+
+        <p class="powered">Powered by Portfolio</p>
+    </footer>
+
+    <!-- -----LIGHTBOX / SLIDER MODAL ------ -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-inner">
+            <button class="lightbox-close" aria-label="close slideshow">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <button class="lightbox-nav prev" aria-label="previous image">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <img src="./assets/img/p1.jpg" alt="current slide" id="lightboxImage" />
+
+            <button class="lightbox-nav next" aria-label="next image">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <p class="lightbox-caption">IMAGE <span id="lightboxIndex">1</span></p>
+
+            <div class="lightbox-dots">
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+                <span class="dot" data-index="6"></span>
+                <span class="dot" data-index="7"></span>
+                <span class="dot" data-index="8"></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
