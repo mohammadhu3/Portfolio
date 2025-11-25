@@ -31,12 +31,4 @@ Il s’agit d’un site portfolio responsive développé à partir des maquettes
 
 ## Structure
 
-index.html
-assets/
- ├── css/style.css
- ├── js/script.js
- ├── img/
- └── font/Lato-Regular.ttf
---
---
 
